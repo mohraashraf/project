@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Ele.devices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='style/all.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel=" stylesheet ">
+    <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top nav-bg" >
+        <div class="container-fluid">
+          <img src="./images/logo.jpg" style="width: 130px ; height: 70px; ">  
+          <a class="navbar-brand gradient-text" href="#" style="margin-left: 10px;">ELECTRONICS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light" href="#" tabindex="-1" aria-disabled="true">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Matecials
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item " href="#" style="color:rgb(228, 147, 179);">Mobile Phone</a></li>
+                  <li><a class="dropdown-item " href="#" style="color: rgb(228, 147, 179);">Laptop</a></li>
+                  <li><a class="dropdown-item " href="#" style="color: rgb(228, 147, 179);">Smart Watch</a></li>
+                  <li><a class="dropdown-item " href="#" style="color: rgb(228, 147, 179);">TV Screen</a></li>
+                  <li><a class="dropdown-item " href="#" style="color: rgb(228, 147, 179);">Headphones</a></li>
+                  <li><hr class="dropdown-divider "></li>
+                  <li><a class="dropdown-item " href="#" style="color: rgb(228, 147, 179);">More...</a></li>
+
+
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn border border-dark btn-hover" type="submit" >Search</button>
+              <button type="button" class="btn border border-dark ms-3 btn-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">login </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header " style="background-color: rgb(228, 147, 179);">
+                            <h1 class="modal-title fs-5  text-white" id="exampleModalLabel">Login</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1 " class="form-label" style="color: rgb(228, 147, 179);">Email address</label>
+                                  <input type="email" class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your email">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label" style="color: rgb(228, 147, 179);">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" style="color: rgb(228, 147, 179);" for="exampleCheck1">Remmember me</label>
+                                </div>
+                                
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn  text-white btn-hover2" style="background-color:  rgb(228, 147, 179);"  > Login</button>
+                          <button type="button" class="btn  text-white btn-hover2" style="background-color:  rgb(228, 147, 179);"  data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+    <aside >
+      <div class="div-icons">
+        <ul>
+          <li> <a> <i class="fab fa-facebook-square i-carousel"></i></a></li>
+          <li> <a> <i class="fab fa-whatsapp-square i-carousel"></i></a></li>
+          <li> <a> <i class="fab fa-instagram-square i-carousel"></i></a></li>
+          <li> <a><i class="fab fa-linkedin i-carousel"></i></a></li>
+        </ul>  
+      </div>
+    </aside>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item  active parent">
+      <img src="images/elec1.jpeg" class="d-block w-100 h-80" alt="img ASWAN">
+      <div class="carousel-caption d-none d-md-block carousel-div">
+        <span style="font-size: 35px;">THE BEST PRODUCT</span>
+        <p>See colliction !!</p>
+          <button type="button" class="btn  text-white " data-bs-dismiss="modal"  style="background-color:  rgb(228, 147, 179); ">shop now</button>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/elec2.jpeg" class="d-block w-100 " alt="">
+      <div class="carousel-caption d-none d-md-block carousel-div">
+        <span style="font-size: 35px;">WE HAVE THE BEST OFFERS..!</span>
+        <p>See colliction !!</p>
+        <button type="button" class="btn text-white " data-bs-dismiss="modal"  style="background-color:  rgb(228, 147, 179);">Shop now</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/background.jpg" class="d-block w-100" alt=" ">
+      <div class="carousel-caption d-none d-md-block carousel-div">
+        <span style="font-size: 35px;">SHOPING NOW ....</span>
+        <p>See colliction !!</p>
+        <button type="button" class="btn  text-white " data-bs-dismiss="modal" style="background-color:  rgb(228, 147, 179);">Shop now</button>
+    </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="welcome">
+  <h4 class="gradient-text"> WELCOME To ele.devices</h3>
+  <p class="P-welcome">Welcome to our electronics website! Discover the latest technologies and smart devices with us.
+  </p>
+  <button type="submit" class="btn btn-light text-dark">Learn more</button>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<hr>
+<div class="titel">
+  The most popular selling items
+</div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed gradient-text shadow-sm bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        HEADPHONES
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body ">High quality headphones can provide an excellent audio experience, providing fine details and clear sound.
+        Well-designed and ergonomic headphones can provide you with a comfortable listening experience for long periods.</div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed  gradient-text shadow-sm bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        LAPTOP DEVICES
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Apple devices provide high performance and good processing power, making them suitable for various purposes such as graphic design, art editing, and programming.
+        Apple pays great attention to preserving the environment, and offers effective recycling programs for its devices.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed  gradient-text shadow-sm bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        MOBILE DEVICES 
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> Modern mobile phones come with high-quality cameras that allow for taking high-quality photos and videos.
+        The mobile phone offers options to keep your data and personal information safe, such as fingerprint lock and encryption technologies.</div>
+  </div>
+</div>
+  </div>
+</div>
+<hr>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="translate">
+  <header class="head-translate">
+     <h3>ORDER NOW.. (LAPTOP)</h3>
+  </header>
+ 
+  <form>
+    <label for="number" style="padding : 10px 0 0 10px ";>Phone Number : </label>
+    <hr>
+    <input type="number" id="number" placeholder="+20 1000000000" style="border: none; padding-left: 17px;">
+    <hr>
+    <label for="text" style="padding : 0 0 0 10px ";>Details : </label>
+    <hr>
+   <textarea style="width: 100%; height: auto; border: none;"></textarea>
+    <hr>
+  </form>
+   <button id="alert" type="button" class="btn border border-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="sent order" data-bs-target="#staticBackdrop" style="background-color:  rgb(228, 147, 179) ;">
+  SEND..!
+</button>
+</div>
+
+<hr>
+
+
+<div class="translate">
+  <header class="head-translate">
+     <h3>ORDER NOW.. (MOBILE PHONE)</h3>
+  </header>
+ 
+  <form>
+    <label for="number" style="padding : 10px 0 0 10px ";>Phone Number : </label>
+    <hr>
+    <input type="number" id="number" placeholder="+20 1000000000" style="border: none; padding-left: 17px;">
+    <hr>
+    <label for="text" style="padding : 0 0 0 10px ";>Details : </label>
+    <hr>
+   <textarea style="width: 100%; height: auto; border: none;"></textarea>
+    <hr>
+  </form>
+
+<button id="alert2" type="button" class="btn border border-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="sent order" data-bs-target="#staticBackdrop" style="background-color:  rgb(228, 147, 179) ;">
+  SEND..!
+</button>
+</div>
+
+<hr>
+
+<div class="translate">
+  <header class="head-translate">
+     <h3>ORDER NOW.. (HEADPHONE)</h3>
+  </header>
+ 
+  <form>
+    <label for="number" style="padding : 10px 0 0 10px ";>Phone Number : </label>
+    <hr>
+    <input type="number" id="number" placeholder="+20 1000000000" style="border: none; padding-left: 17px;">
+    <hr>
+    <label for="text" style="padding : 0 0 0 10px ";>Details : </label>
+    <hr>
+   <textarea style="width: 100%; height: auto; border: none;"></textarea>
+    <hr>
+  </form>
+
+<button id="alert3" type="button" class="btn border border-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="sent order" data-bs-target="#staticBackdrop" style="background-color:  rgb(228, 147, 179) ;">
+  SEND..!
+</button>
+</div>
+<hr>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="bg-fixed">
+</div>
+<!-- ////////////////////////////////////////////////////////// -->
+ 
+<div class="titel">
+  <h1 class="gradient-text" style="text-align: center; ">POPULAR DESTINATIONS IN EGYPT</h1>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-4 p-5">
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/laptop1.avif" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">LAPTOP DEVICE</h5>
+        <p class="card-text">Laptop hp intel corei5 8th gen </p>
+        <p class="card-text">price : 25-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"   type="button" style="background-color: rgb(228, 147, 179);">Add Card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/laptop2.avif" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">LAPTOP DEVICE</h5>
+        <p class="card-text">Laptop DELL intel corei7 7th gen </p>
+        <p class="card-text">price : 30-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"   type="button" style="background-color: rgb(228, 147, 179);">Add Card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/laptop3.avif" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">LAPTOP DEVICE</h5>
+        <p class="card-text">Laptop icer intel corei5 10th gen </p>
+        <p class="card-text">price : 35-000 EGP</p>
+         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"   type="button" style="background-color: rgb(228, 147, 179);">Add Card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/laptop4.avif" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">LAPTOP DEVICE</h5>
+        <p class="card-text">Laptop lenovo intel corei7 9th gen </p>
+        <p class="card-text">price : 25-000 EGP</p>
+         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"   type="button" style="background-color: rgb(228, 147, 179);">Add Card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4 p-5">
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/phone.jpg" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">IPHONE DEVICE</h5>
+        <p class="card-text">Iphone 14 pro max</p>
+        <p class="card-text">price : 60-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"  type="button" style="background-color: rgb(228, 147, 179);">Add card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/phone2.jpg" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">IPHONE DEVICE</h5>
+        <p class="card-text">Iphone 13</p>
+        <p class="card-text">price : 30-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"  type="button" style="background-color: rgb(228, 147, 179);">Add card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/phone3.jpg" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">IPHONE DEVICE</h5>
+        <p class="card-text">Iphone 13 pro max</p>
+        <p class="card-text">price : 39-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a ><button class="btn"  type="button" style="background-color: rgb(228, 147, 179);">Add card</button></a> 
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 card1">
+      <img src="images/phone4.jpg" class="card-img-top img-siaha" alt="...">
+      <div class="card-body" style="z-index: 10;">
+        <h5 class="card-title">IPHONE DEVICE</h5>
+        <p class="card-text">Iphone 13</p>
+        <p class="card-text">price : 30-000 EGP</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+         <a ><button class="btn"  type="button" style="background-color: rgb(228, 147, 179);">Add card</button></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  <div class="bg-fixed2">
+  </div>
+
+  <hr>
+
+  <div class="titel">
+    <h1 class="gradient-text" style="text-align: center; ">OFFERS....!</h1>
+  </div>
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="all container">
+  <div class="row justify-content-center">
+
+    <div class="all1  col-lg-4 col-md-6 col-sm-12" style="padding-bottom:100px ;">
+      <div class="img1-all " >
+      <div class="overlay">
+       <h5 class="p-all" style="margin:30px 0 0 20px; color: rgb(240, 173, 200);">DISCOUNT 20%</h5>
+       <i class="far fa-clock" style="margin-left: 20px;"><h6 style="display: inline-block;"> for only one headphone</h6></i>
+       <div class="footer-all" style="margin-top: 150px;">
+       <img src="images/headphone.jpg" alt="ana" style="width: 100px; height: 120px; border-radius: 50%; margin-left: 20px;">
+      </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="all1  col-lg-4 col-md-6 col-sm-12">
+    <div class="img2-all">
+    <div class="overlay">
+      <h5 class="p-all" style="margin:30px 0 0 20px; color: rgb(240, 173, 200);">DISCOUNT 50%</h5>
+      <i class="far fa-clock" style="margin-left: 20px;"><h6 style="display: inline-block;"> buy two get this offer</h6></i>
+      <div class="footer-all " style="margin-top: 150px;">
+     <img src="images/headphone.2jpg.jpg" alt="ana" style="width: 100px; height: 120px; border-radius: 50%; margin-left: 20px;">
+    </div>
+    </div>
+  </div>
+ </div>
+
+ <div class="all1  col-lg-4 col-md-6 col-sm-12">
+  <div class="img3-all">
+  <div class="overlay">
+    <h5 class="p-all" style="margin:30px 0 0 20px; color: rgb(240, 173, 200);">DISCOUNT 40%</h5>
+    <i class="far fa-clock" style="margin-left: 20px;"><h6 style="display: inline-block;"> buy tow airpods.. get offer</h6></i>
+    <div class="footer-all" style="margin-top: 150px;">
+   <img src="images/headphone3.jpg" alt="ana" style="width: 100px; height: 120px; border-radius: 50%; margin-left: 20px; ">
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="card mb-3 podcast2 rounded rounded-5 " >
+  <div class="row g-0">
+    <div class="col-md-4 ">
+      <img src="images/bgg.avif" class="img-fluid rounded rounded-5 img-podcast2 " alt="location">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ">
+        <h1 class="h1-podcast2">Best seller</h1>
+        <i class="fas fa-map-marker-alt">location</i>
+    <span class="line2"></span>
+
+     <p>Iphone 13 pro max the best seller becouse . Improved camera: iPhone 13 Pro Max comes with an improved camera that delivers high-quality images and excellent performance in different lighting conditions.
+
+     </p>
+      <div class="podcast-bottom2">
+        <button class="btn-podcast2"><i class="fas fa-phone-alt"></i>call now</button>
+        <button class="btn-podcast2"><i class="fas fa-sms"></i>more</button>    
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 podcast2 rounded rounded-5" >
+  <div class="row g-0">
+    <div class="col-md-4 ">
+      <img src="images/headphone4.jpg" class="img-fluid rounded rounded-5 img-podcast2 " alt="location">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="h1-podcast2">Best seller</h1>
+        <i class="fas fa-map-marker-alt">location</i>
+    <span class="line2"></span>
+
+     <p> headohone the best seller . High quality headphones can provide an excellent audio experience, providing fine details and clear sound
+      ....Some headphones come with noise isolation technologies that help prevent external noise from entering, allowing you to enjoy your music or audio better.
+    </p>
+      <div class="podcast-bottom2">
+        <button class="btn-podcast2"><i class="fas fa-phone-alt"></i>call now</button>
+        <button class="btn-podcast2"><i class="fas fa-sms"></i>more</button>    
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 podcast2 rounded rounded-5" >
+  <div class="row g-0">
+    <div class="col-md-4 ">
+      <img src="images/bgg.avif" class="img-fluid rounded rounded-5 img-podcast2 " alt="location">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="h1-podcast2">Best seller</h1>
+        <i class="fas fa-map-marker-alt">location</i>
+    <span class="line2"></span>
+
+     <p> macbook best seller .. The macOS operating system used in Apple devices is reliable , and provides a smooth and easy user experience. Apple devices provide high performance and good processing power, making them suitable for various purposes such as graphic design, and programming.
+     </p>
+      <div class="podcast-bottom2">
+        <button class="btn-podcast2"><i class="fas fa-phone-alt"></i>call now</button>
+        <button class="btn-podcast2"><i class="fas fa-sms"></i>more</button>    
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 podcast1 rounded rounded-5" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="images/location.jpg" class="img-fluid rounded rounded-5 img-podcast" alt="location">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="h1-podcast">OUR BRANCHES</h1>
+        <i class="fas fa-map-marker-alt">location</i>
+    <span class="line"></span>
+    <h3>our branches</h3>
+    <hr>
+      <pre>
+ AL-Minia : new minia First District 
+ phone : 01286195287
+
+
+ AL-Minia : new minia First District 
+ phone : 01286195287
+      </pre>
+      <div class="podcast-bottom">
+        <button class="btn-podcast"><i class="fas fa-phone-alt"></i>call now</button>
+        <button class="btn-podcast"><i class="fas fa-sms"></i>send message</button>    
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+<h1 class="gradient-text" style="text-align: center;">JOIN US</h1>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+      <div class="card text-center"  style="box-shadow:1px 1px 5px 5px rgba(0, 0, 0, 0.219)    ;">
+        <div class="card-body">
+          <h5 class="card-title"  style="color: rgb(228, 147, 179); margin-bottom:20px ;">SEND Massege</h5>
+          <img src="images/whats.avif" alt="whatsapp" class="img-join">
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" style="color: rgb(228, 147, 179);">
+            Go To link
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+      <div class="card text-center"  style="box-shadow:1px 1px 5px 5px rgba(0, 0, 0, 0.219)    ;">
+        <div class="card-body">
+          <h5 class="card-title"  style="color: rgb(228, 147, 179); margin-bottom:20px ;">Like Page</h5>
+          <img src="images/insta.avif" alt="insta" class="img-join">
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" style="color: rgb(228, 147, 179);">
+            Go To link
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" >
+      <div class="card text-center " style="box-shadow:1px 1px 5px 5px rgba(0, 0, 0, 0.219);">
+        <div class="card-body">
+          <h5 class="card-title"  style="color: rgb(228, 147, 179); margin-bottom:20px ;">View Profile</h5>
+          <img src="images/face.avif" alt="facebook" class="img-join">
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" style="color: rgb(228, 147, 179);">
+            Go To link
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-">
+      <div class="card text-center"  style="box-shadow:1px 1px 5px 5px rgba(0, 0, 0, 0.219)    ;">
+        <div class="card-body">
+         <h5 class="card-title"  style="color: rgb(228, 147, 179); margin-bottom:20px ;">Follow </h5>
+        <img src="images/twitter.jpg" alt="twitter" class="img-join">
+        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" style="color: rgb(228, 147, 179);">
+          Go To link
+        </a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+<section class="sec-footer">
+  <footer class=" text-center text-md-start " style="margin-top:100px ; width: 100%; height:auto; background-color:  rgb(206, 132, 161);">
+    <div class="container p-2">
+      <div class="row ">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0 " >
+          <hr style="width: auto; ">
+          <img src="images/logo.jpg" alt="" style="height: 70px; width: 70px; border-radius: 50%; display: inline-block;box-shadow: 1px 1px 7px 7px rgba(255, 255, 255, 0.548);" >
+          <h5 class="text-uppercase text-white" style="display: inline-block;">good combany</h5>
+            <hr style="width: auto; ">
+            <ul class="list-unstyled ms-5 ps-4">
+              <li class="text-white">
+                <P class="text-white">TEL : 01508795287</P>
+              </li>
+              <li>
+                <P class=" text-white">addres : EGYPT</P>
+              </li>
+              <li>
+                <P class=" text-white">FAX : 0000000000</P>
+              </li>
+             
+            </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <hr style="width: auto; ">
+          <img src="images/logo.jpg" alt="" style="height: 70px; width: 70px; border-radius: 50%; display: inline-block;box-shadow: 1px 1px 7px 7px rgba(255, 255, 255, 0.548);" >
+          <h5 class="text-uppercase text-white" style="display: inline-block;">good combany</h5>
+            <hr style="width: auto; ">
+          <ul class="list-unstyled ms-5">
+            <li >
+              <a href="#!" class=" text-decoration-none p-5 m-4 lh-lg a-footer">visit us </a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none p-5 m-3 lh-lg a-footer">take look</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none  lh-lg a-footer">your healthy is more important</a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <hr style="width: auto; ">
+          <img src="images/logo.jpg" alt="" style="height: 70px; width: 70px; border-radius: 50%; display: inline-block;box-shadow: 1px 1px 7px 7px rgba(255, 255, 255, 0.548);" >
+          <h5 class="text-uppercase text-white" style="display: inline-block;">good combany</h5>
+            <hr style="width: auto; ">
+            <ul class="list-unstyled ms-5 ps-4">
+              <li class="text-white">
+                <P class="text-white ps-5">services for all</P>
+              </li>
+              <li>
+                <P class=" text-white ps-4">provided best services</P>
+              </li>
+              <li>
+                <P class=" text-white">you will be better than before</P>
+              </li>
+             
+            </ul>
+        </div>
+        </div>
+      </div>
+    
+<hr>
+
+    <div class="text-center p-1 gradient-text">
+     <h4  style="display: inline;"> COPYRIGHT © 2024 MOHRA ASHRAF JACOP GOOD COMBANY ALL RIGHTS </h4> 
+    </div>
+    <hr>
+  </footer>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='js/script.js'></script>   
+</body>
+</html>
